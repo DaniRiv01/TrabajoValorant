@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/nav.js" defer></script>
+    <script src="../js/Agents.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style="font-family: 'Valorant', sans-serif;">
+    <style>
+        @font-face {
+            font-family: "Valorant";
+            src: url("../public/fonts/Valorant\ Font.ttf");
+        }
+    </style>
+    <header>
+        <div id="nav"></div>
+    </header>
+
+    <main class="flex">
+        <section id="left" class="w-1/2 h-screen">
+            <div id="nameAgentContainer"></div>
+            <div id="imageAgentContainer"></div>
+            <div id="descriptionAgentContainer"></div>
+        </section>
+        <section id="right" class="w-1/2 h-screen">
+            <div id="agentsTitle" class="flex justify-center items-center">
+                <h2 class="text-8xl text-gray-800">Agentes</h2>
+            </div>
+            <div id="agentsContainer" class="flex flex-wrap min-w-0 gap-2 justify-center"></div>
+        </section>
+    </main>
+</body>
+</html>
