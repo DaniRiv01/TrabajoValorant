@@ -9,17 +9,25 @@
 </head>
 
 <body>
-    <nav class="bg-slate-900">
-        <ul class="flex items-center justify-between">
-            <div class="flex items-center">
-                <li><a href=""><img src="../media/img/user.png" alt=""></a></li>
-                <li><a href=""><img src="../media/img/gun.png" alt="" class="w-44"></a></li>
-                <li><a href=""><img src="../media/img/map.png" alt=""></a></li>
-            </div>
-            <li class=" absolute left-1/2 -translate-x-1/2"><a href=""><img src="../media/img/logo.png" alt="" class="w-20"></a></li>
-            <li><a href=""><img src="../media/img/moon.png" alt=""></a></li>
-        </ul>
-    </nav>
+    <nav class="bg-slate-900 p-4">
+    <ul class="flex items-center justify-between relative">
+        <div class="flex items-center gap-4">
+            <li><a href="Agents.html"><img src="../media/img/user.png" alt="User" class="w-8 h-8"></a></li>
+            <li class="hidden md:block"><a href="Weapons.html"><img src="../media/img/gun.png" alt="Gun" class="w-16"></a></li>
+            <li><a href="Maps.html"><img src="../media/img/map.png" alt="Map" class="w-8 h-8"></a></li>
+        </div>
+
+            <li class="absolute left-1/2 -translate-x-1/2">
+            <a href="../index.html"><img src="../media/img/logo.png" alt="Logo" class="w-12 md:w-16"></a>
+        </li>
+
+        <li>
+            <button id="themeToggle" class="cursor-pointer hover:scale-110 transition-transform">
+                <img id="themeIcon" src="../media/img/moon.png" alt="Modo" class="w-8 h-8">
+            </button>
+        </li>
+    </ul>
+</nav>
 </body>
 
 </html>

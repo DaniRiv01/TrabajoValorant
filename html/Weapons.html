@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valorant Weapons</title>
+    <script src="../js/navMinimalist.js" defer></script>
+    <script src="../js/Weapons.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face { font-family: "Valorant"; src: url("../public/fonts/Valorant\ Font.ttf"); }
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fadeUp { animation: fadeUp 0.5s ease-out both; }
+    </style>
+</head>
+<body class="antialiased min-h-screen w-full bg-cover bg-center bg-no-repeat bg-fixed font-['Valorant'] selection:bg-[#ff4655] selection:text-white" style="background-image: url('../media/img/wallpaper.webp')">
+    
+    <header>
+        <div id="nav"></div>
+    </header>
+
+    <main class="flex flex-col lg:flex-row min-h-screen lg:h-screen lg:overflow-hidden backdrop-blur-sm">
+        
+        <section id="left" class="hidden lg:flex w-full lg:w-1/2 h-auto lg:h-full flex-col items-center justify-center p-8 overflow-y-auto order-first transition-all duration-500 ease-in-out max-h-screen max-lg:pt-[5vh]
+            [&::-webkit-scrollbar]:w-2 
+            [&::-webkit-scrollbar-track]:bg-transparent 
+            [&::-webkit-scrollbar-thumb]:bg-[#ff4655] 
+            [&::-webkit-scrollbar-thumb]:rounded-full 
+            [scrollbar-width:thin] [scrollbar-color:#ff4655_transparent]">
+            
+            <div id="nameWeaponContainer" class="w-full flex justify-center items-center mb-2"></div>
+            <div id="imageWeaponContainer" class="flex justify-center items-center"></div>
+            <div id="descriptionWeaponContainer" class="w-full flex justify-center items-center text-center mt-2 px-4"></div>
+            
+            <div id="skinsSelectedContainer" class="w-full flex justify-center items-start mt-4 gap-4 px-4 pb-10"></div>
+        </section>
+
+        <section id="right" class="w-full lg:w-1/2 h-auto lg:h-full p-5 overflow-y-auto order-last lg:order-none
+            [&::-webkit-scrollbar]:w-2 
+            [&::-webkit-scrollbar-thumb]:bg-[#ff4655] 
+            [&::-webkit-scrollbar-thumb]:rounded-lg">
+            
+            <div id="weaponsTitle" class="flex justify-center items-center mt-5">
+                <h2 class="text-6xl md:text-8xl text-white uppercase font-bold transition-colors duration-300">
+                    Armas
+                </h2>
+            </div>
+            <div id="weaponsContainer" class="flex flex-wrap gap-4 justify-center mt-10 pb-10"></div>
+        </section>
+
+    </main>
+</body>
+</html>
