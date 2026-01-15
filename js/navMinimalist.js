@@ -10,7 +10,7 @@
     function applyTheme(isLight) {
         document.body.classList.toggle('light-mode', isLight);
         localStorage.setItem('theme', isLight ? 'light' : 'dark');
-        const darkBg = IN_HTML_FOLDER ? "../media/img/wallpaper.webp" : "media/img/wallpaper.webp";
+        const darkBg = IN_HTML_FOLDER ? "../media/img/wallpaper.webp" : "media/img/wallpaper.jpg";
         const lightBg = IN_HTML_FOLDER ? "../media/img/wallpaper_light_mode.jpg" : "media/img/wallpaper_light_mode.jpg";
         document.body.style.backgroundImage = `url('${isLight ? lightBg : darkBg}')`;
         const icon = document.querySelector("#themeIconMinimal") || document.querySelector("#themeIcon");
